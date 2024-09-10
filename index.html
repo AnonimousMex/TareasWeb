@@ -1,98 +1,83 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Portafolio Personal</title>
+    <title>Testimonios</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-                <img src="ponys-1068x575-removebg-preview.png" alt="Logo">
-                <ul class="nav_list_links">
-                    <li class="nav__item"><a href="#home">Inicio</a></li>
-                    <li class="nav__item"><a href="#projects">Proyectos</a></li>
-                    <li class="nav__item"><a href="#skills">Habilidades</a></li>
-                    <li class="nav__item"><a href="#contact">Contacto</a></li>
-                </ul>
-            
-        </nav>
-
-          
-        <div class="header__content">   
-           
-            <div class="texts">
-                <h1 class="header__title">Hola, soy Diego Rivera</h1><br>
-            <p class="header__description">Aquí puedes ver todos mis proyectos que he realizado y <br>
-                 las empresas con las que he colaborado.</p>
-            <div class="header__buttons">
-                <a href="#projects" class="header__button">Ver más</a>
-                <a href="#contact" class="header__button">Contacto</a>
+    <main class="main">
+        <h1>Testimonios de Clientes</h1>
+        <div class="cards">
+            <div class="cards-container">
+                <h2>Juan Peréz</h2>
+                <p>"Excelente servicio, muy profesional y siempre a tiempo.
+                    Altamente recomendable."</p>
+            </div>
+            <div class="cards-container">
+                <h2>María López</h2>
+                <p>"El equipo hizo un gran trabajo desarrollado mi sitio web. Estoy muy
+                    satisfecha con el resultado."</p>
+            </div>
+            <div class="cards-container">
+                <h2>Carlos García</h2>
+                <p>"Una experiencia fantástica de principio a fin. 
+                    Gran atención al detalle y excelente comunicación."</p>
             </div>
             </div>
-            <video class="video" autoplay muted loop src="Coding _ Programming _ Background Video FHD.mp4"> </video> 
-
+        </div>
+    </main>
+    <header class="images-container">
+        <h1>Imágenes Destacadas</h1>
+        <div class="images">
+            <div class="images-container-img">
+                <img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/b2253bb6-9b53-11e6-8b9d-00163ed833e7/126948832/facebook-1.jpeg" alt="img1">
+                <p>Descripción de laimagen 1</p>
+            </div>
+            <div class="images-container-img">
+                <img src="https://www.androidauthority.com/wp-content/uploads/2020/08/xbox-series-x-interface-august-2020.jpg" alt="img2">
+                <p>Descripción de laimagen 2</p>
+            </div>
+            <div class="images-container-img">
+                <img src="https://i.pinimg.com/736x/de/98/89/de98899debfce9bf1d108d3fb0b7e4e1.jpg" alt="img3">
+                <p>Descripción de laimagen 3</p>
+            </div>
+            </div>
         </div>
     </header>
 
-    <section id="home" class="section__home">
-        <div class="section__content">
-            <h2 class="section__title">Bienvenido a mi Portafolio</h2>
-            <p class="section__description">Aquí puedes ver mis proyectos, habilidades, y formas de contacto.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="section_projects">
-        <h2 class="section_title projects_title">Proyectos</h2>
-        <div class="projects__list">
-            <div class="project">
-                <img src="https://internetretailing.net/wp-content/uploads/2022/05/amazon-homepage-screenshot.png" alt="Proyecto 1" class="project__image">
-                <p class="project__description">Descripción del Proyecto 1</p>
+    <div class="contact-form">
+        <h2>Contáctanos</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name"
+                    placeholder="Tu nombre completo">
             </div>
-            <div class="project">
-                <img  class="pinterest-img" src="https://cdn.taggbox.com/v7/taggbox.com/blog/wp-content/uploads/2020/12/Pinterest-1.png" alt="Proyecto 2" class="project__image">
-                <p class="project__description">Descripción del Proyecto 2</p>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email"
+                    placeholder="Email">
             </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section skills">
-        <h2 class="section_title skills_title">Habilidades</h2>
-        <div class="skills__list">
-            <div class="skills__item">
-                <h3 class="skills__name">HTML</h3>
-                <p class="skills__description">Dominio avanzado en HTML5, capaz de estructurar y crear contenido web accesible y semántico.</p>
-                <div class="skills__progress">
-                    <div class="skills__progress-bar"></div>
-                </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone"
+                    placeholder="Numero de teléfono">
             </div>
-            <div class="skills__item">
-                <h3 class="skills__name">CSS</h3>
-                <p class="skills__description">Experiencia en CSS3, incluyendo diseño responsivo y técnicas avanzadas como Grid y Flexbox.</p>
-                <div class="skills__progress">
-                    <div class="skills__progress-bar"></div>
-                </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                    placeholder="Agrega tu Mensaje" rows="5"></textarea>
             </div>
-            <div class="skills__item">
-                <h3 class="skills__name">JavaScript</h3>
-                <p class="skills__description">Familiaridad con JavaScript ES6+, desarrollo de aplicaciones interactivas y uso de frameworks como React.</p>
-                <div class="skills__progress">
-                    <div class="skills__progress-bar"></div>
-                </div>
-            </div>
-            <div class="skills__item">
-                <h3 class="skills__name">React</h3>
-                <p class="skills__description">Experiencia en el desarrollo de aplicaciones con React, incluyendo Hooks y gestión del estado con Redux.</p>
-                <div class="skills__progress">
-                    <div class="skills__progress-bar"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <button type="submit"
+                class="submit-button">Enviar</button>
+        </form>
+    </div>
 
     <footer class="footer">
         <p class="footer__text">© 2024 Programación Web. Todos los derechos reservados.</p>
     </footer>
+    
 </body>
 </html>
