@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 700px;
+    width: 900px;
     height: 500px;
     box-shadow: 2px 2px 4px #000000;
 }
@@ -19,18 +19,30 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 50%;
+    background-color: rgb(248, 52, 52);
+    height: 100%;
 }
 
 .container__left > img{ 
-    width: 100%;
-    height: 50%;
+    width: 90%;
+    height: 70%;
 }
 
 .container__right{
-    width: 60%;
+    width: 50%;
+    height: 100%;
     padding: 5px 20px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container__right img{
+    width: 200px;
+    height: auto;
 }
 
 .container__right h1{
@@ -40,10 +52,15 @@ body{
 }
 
 .container__right p{
+    color: rgb(159, 155, 155);
+    margin-top: -13px;
     font-size: 0.9rem;
 }
 
+
 .input__container{
+    width: 60%;
+    margin-top: 1rem;
     background-color: #f6f6f6;
     margin-bottom: 0.6rem;
     padding: 10px 15px;
@@ -51,12 +68,13 @@ body{
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    border-radius: 10px;
 }
 
 .input__container input{
     border: none;
-    width: 80%;
     background-color: transparent;
+    
 }
 
 input{
@@ -99,45 +117,102 @@ img{
 
 .divider{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-top: 1rem;
+    font-size: 15px;
+    gap: 5px;
 }
 
 .divider > hr{
-    width: 40%;
+    width: 70px;
 }
 
 .social__icons{
     margin-top: 1rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
 .social__icon{
-    width: 100px;
     padding: 10px 15px;
     border: 0.5px solid rgb(207, 202, 202);
-    border-radius: 15px;
+    border-radius: 50%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.remember{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1.5rem auto;
+.social__icon img{
+    width: 17px;
+    height: 18px;
 }
 
-.copy{
-    color: #cfcfcf;
-    margin-top: 3rem;
+.choice{
+    background: #cfcfcf;
+    border-radius: 10px;
+    width: 65%;
+    padding: 2px;
     display: flex;
-    justify-content: center;
-    align-items: end;
+    justify-content: center ;
+    gap: 10px;
 }
 
+.choice > button{
+    background: transparent;
+    padding: 5px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+}
+
+.choice > button:focus{
+    background: #fff;
+}
+
+.continue > button{
+    width: 280px;
+    height: 30px;
+    color: #fff;
+    background-color: red;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.social__icon__facebook{
+    background-color: blue;
+}
+
+.social__icon__apple{
+    background-color: #000000;
+}
+
+.container__right .bottom-text > p{
+    color: #bab8b8;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.input__container > p{
+    margin: 0 2px;
+    font-size: 25px;
+}
+
+.input__wrapper{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.input__wrapper label{
+    font-size: 10px;
+}
+
+.input__wrapper input{
+    font-weight: bold;
+}
