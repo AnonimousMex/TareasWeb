@@ -7,17 +7,27 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="todo-container">
-    <h1>Lista de Tareas</h1>
-  <div class="input-container">
-    <input type="text" id="todo-input"/>
-    <button id="add-btn">Agregar Tarea</button>
+  <div class="full-container">
+    <div class="container">
+      <div class="clock">
+          <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+      </div>
+      <div class="date">
+        <span id="day">00</span>/<span id="month">00</span>/<span id="year">0000</span>
+      </div>
   </div>
-  <ul class="todo-list" id="todo-list">
-    <!-- <li class="completed">Tarea 1</li>
-    <li>Tarea 2</li>
-    <li>Tarea 3</li> -->
-  </ul>
+    <div class="todo-container">
+      <h1>Lista de Tareas</h1>
+    <div class="input-container">
+      <input type="text" id="todo-input"/>
+      <button id="add-btn">Agregar Tarea</button>
+    </div>
+    <ul class="todo-list" id="todo-list">
+      <!-- <li class="completed">Tarea 1</li>
+      <li>Tarea 2</li>
+      <li>Tarea 3</li> -->
+    </ul>
+    </div>
   </div>
       
   <script src="index.js"></script>
